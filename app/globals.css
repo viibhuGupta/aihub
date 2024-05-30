@@ -14,5 +14,8 @@
   .gradient{
     @apply bg-gradient-to-r from-teal-400 to-yellow-200 ;
   }
+  .active-btn{
+    @apply bg-sky-300 font-semibold p-3 rounded-lg  ;
+  }
 
 }
