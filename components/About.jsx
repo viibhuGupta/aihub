@@ -32,7 +32,7 @@ function chnageTopptAI () {
         <h1 className="heading text-5xl felx text-center  ">Best AI Tools List</h1>
 
         <div className=" flex justify-center mt-9">
-          <div className=" rounded-lg bg-sky-50 w-[43rem] p-2 ">
+          <div className=" rounded-lg bg-rose-50 w-[43rem] p-2 ">
             <div className="flex gap-7  heading text-2xl w-auto  justify-center text-center  ">
               <button 
               onClick={chnageTocontentAT}
