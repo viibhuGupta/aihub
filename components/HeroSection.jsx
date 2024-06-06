@@ -6,10 +6,10 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
    <>
-  <div className=" w-full h-full ">
+  <div className=" bg-slate-300 mt-0 ">
 
-<div className="gradient w-full h-[50rem] flex relative justify-center   ">
-  <Navbar/>
+ <div className=" flex relative justify-center   ">
+
 
   <div className="flex flex-col justify-center gap-7 w-[60rem] h-[26rem] items-center text-center mt-48 ">
     
