@@ -1,11 +1,13 @@
 import CategoriesCard from '@/components/CategoriesCard'
+import "@/sass/store.scss"
 
 import React from 'react'
-import getCategory from '../lib/getCategory'
+import getCategories from '../lib/getCategories';
+
 
 export default async function Page  ()  {
-    const categories = await getCategory();
-    console.log(categories)
+    const categories = await getCategories();
+    // console.log(categories)
   return (
     <>
 
@@ -16,11 +18,7 @@ export default async function Page  ()  {
   <div className='flex gap-10 m-9 justify-center' >
 
 {
-   categories.map((category) =>{
-    return(
-        <CategoriesCard key = {category.id}/>
-    )
-   })
+  
    }
   </div>
 

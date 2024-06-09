@@ -79,3 +79,4 @@ export const writingContent = {
     para:"Try Content Writing",
     icon:"/assets/icons/arrow-right.svg"
 }
+
