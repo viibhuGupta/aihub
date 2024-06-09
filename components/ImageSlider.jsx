@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 
 import { ArrowLeft } from 'lucide-react';
@@ -74,6 +74,16 @@ const ImageSlider = ({slides}) => {
     const goTOSlides = (slideIndex) => {
         setCurrentIndex(slideIndex)
     }
+
+     useEffect(() => {
+       const timer = setTimeout( () => {
+            goToNext();
+        }  , 5000)
+        return() => {
+            clearTimeout(timer)
+
+        }
+     }, [currentIndex])
    
 
   return (
