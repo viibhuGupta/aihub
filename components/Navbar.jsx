@@ -1,37 +1,66 @@
+"use client"
 import Link from 'next/link'
-import React from 'react'
+import React , {useState} from 'react'
+import { AlignRight } from 'lucide-react';
+
+const navData =[
+  {
+    name : "Store",
+    path : "/store"
+  },
+  {
+    name : "Pricing",
+    path : "/pricing"
+  },
+  {
+    name : "Image Slider",
+    path : "/imageSlider"
+  },
+ 
+]
 
 const Navbar = () => {
+  const [showNav, setShowNav] = useState(false);
   return (
-    <div className=" w-full flex justify-center  bg-transparent ">
-      <div className='flex justify-center items-center mt-7 '>
-        <ul className='flex gap-[30rem] '>
-          <li>
-            <Link href='/'>
-              <span>AIHUB</span> <span className='border-2 w-full bg-rose-500 text-white font-semibold text-lg rounded-lg p-3 justify-center'>Get best Ai</span>
+    <div className=" w-full flex justify-between items-center  bg-transparent p-4 pr-10 pl-10 ">
+     
+            <Link 
+            className='flex items-center gap-4'
+            href='/'>
+              <span>AIHUB</span> <span className='border-2 hidden lg:flex md:flex w-full bg-rose-400 text-white font-semibold text-lg rounded-lg p-1 pl-6 pr-6 '>Get best Ai</span>
             </Link>
-          </li>
-          <li>
-            <ul className='flex gap-12'>
-              <li>
-                <Link href='/store'>Store</Link>
-              </li>
-              <li>
-                <Link href='/'>Our Features</Link>
-              </li>
-              <li>
-                <Link href='/'>Uses</Link>
-              </li>
+
+       
+    
+
+         
+            <ul className=' sm:flex  lg:flex lg:gap-5 md:flex md:gap-3'>
+
+              {
+                navData.map((items,index) => {                  
+                    return(
+                      <li 
+                      className='' 
+                      key={index}>
+                      <Link href={items.path} >{items.name}</Link>
+                      </li>
+                    )
+                })
+              }
+
             </ul>
-          </li>
-          <li>
-            <div className="flex gap-5">
+            {/* "md:flex lg:flex gap-5 hidden " */}
+            <div className= {`md:flex lg:flex lg:gap-5 md:gap-3 hidden `}>
               <button>Login</button>
               <button className='btn bg-red-400 text-primary'>Get Started</button>
             </div>
-          </li>
-        </ul>
-      </div>
+
+            <button className='lg:hidden md:hidden  '>
+            <AlignRight
+           
+            />
+            </button>
+        
     </div>
   )
 }
