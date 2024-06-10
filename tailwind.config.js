@@ -10,7 +10,12 @@ module.exports = {
       colors: {
         primary: "#160647",
         secondary: "#6C6C6C",
-        third :  "#47BEBA"
+        third :  "#47BEBA",
+
+        quiztext : "#FFFFFF",
+        quizbg : "#AA8DFF",
+        correctans : "#FF9051",
+        worngans :"#f43f5e"
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -18,4 +18,18 @@
     @apply bg-rose-500 p-3 rounded-lg text-white font-bold  ;
   }
 
+.quiz-question{
+  @apply border border-slate-400 rounded-lg p-5 w-[40rem] ;
+
+}
+
+.quiz-text{
+  @apply text-white font-semibold text-2xl 
+}
+
+.button-outline{
+  @apply border border-[#22c55e] rounded-lg p-3 pl-6 pr-6  ;
+
+}
+
 }
