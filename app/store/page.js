@@ -1,29 +1,52 @@
-import CategoriesCard from '@/components/CategoriesCard'
-import "@/sass/store.scss"
+"use client"
 
-import React from 'react'
-import getCategories from '../lib/getCategories';
+import Image from 'next/image';
+import{ React , useState , useEffect} from 'react'
+
+export default  function Page  ()  {
 
 
-export default async function Page  ()  {
-    const categories = await getCategories();
-    // console.log(categories)
+const [categories, setCategories] = useState([]);
+
+useEffect(() => {
+  async function fetchCategories() {
+    try {
+      const response = await fetch('https://api.escuelajs.co/api/v1/categories');
+      const data = await response.json();
+      setCategories(data.slice(0, 5)); // Get only the first five categories
+      console.log('Categories data:', data); 
+    } catch (error) {
+      console.error('Error fetching categories:', error);
+    }
+  }
+
+  fetchCategories();
+}, []);
+  
   return (
     <>
 
-   <section className='bg-slate-200 mt-3  '>
-    <h1 className='text-5xl justify-center items-center flex '>
-        categories
-    </h1>
-  <div className='flex gap-10 m-9 justify-center' >
+<div>
+      <h1>Categories</h1>
+      <ul>
+        {categories.map(category => (
+          <li key={category.id}>
+            {category.name}
 
-{
-  
-   }
-  </div>
-
-   </section>
+            <Image
+            src={category.image}
+            height={200}
+            width={150}
+            alt='categirt'
+            />
+          </li>
+        ))}
+      </ul>
+    </div>
+    
     </>
+
+   
   )
 }
 

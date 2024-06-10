@@ -1,7 +1,7 @@
 "use client"
 import "@/sass/pricing.scss"
 import PricingCard from '@/components/PricingCard'
-import {  monthlyPackageData ,yearlyPackageData } from '@/PackageData'
+import {  monthlyPackageData ,yearlyPackageData } from '@/Data'
 import { useState } from "react"
 
 const page = () => {
