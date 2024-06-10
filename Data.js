@@ -225,5 +225,16 @@ export const questions =[
         ],
         answer: "Cascading Style Sheets",
       },
+      {
+        id: 6,
+        question: "Who is nitin gadegri?",
+        options: [
+          "Prime Minister",
+          "Home Minister",
+          "Gawar",
+          "Hiway Minister",
+        ],
+        answer: "Hiway Minister",
+      },
 ]
 

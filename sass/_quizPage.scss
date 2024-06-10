@@ -1,7 +1,7 @@
 .quiz-main{
 background-color: #544680;
 width: 800px;
-height: fit-content;
+height: fit;
 padding: 3rem;
 margin-top: 2rem;
 border-radius: 10px;
@@ -46,6 +46,7 @@ border-radius: 10px;
     font-size: 22px;
     font-weight: bolder;
     color: black;
+    transition-duration: 200ms;
 }
 
 .quiz-worng-ans{
@@ -55,6 +56,7 @@ border-radius: 10px;
     font-size: 22px;
     font-weight: bolder;
     color: black;
+    transition-duration: 200ms;
 }
 
 .quiz-footer{
