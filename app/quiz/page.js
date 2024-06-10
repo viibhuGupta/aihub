@@ -7,6 +7,16 @@ import { questions } from '@/Data';
 const page = () => {
   const [currentQuestions , setCurrentQuestions] = useState(0);
   const question = questions[currentQuestions]
+  const [selectedOption , setSelectedOption] = useState("");
+  const [showAnswer , setShowAnswer] = useState(false);
+
+  function handleSelectedOption  (option){
+    setSelectedOption(option);
+    setShowAnswer(true)
+  }
+
+  
+
   return (
     <div className='flex flex-col items-center  sm:w-full sm:h-[100vh] bg-quizbg    '>
 
@@ -40,9 +50,14 @@ const page = () => {
        
        
       {
-        question.options.map((option)=>{
+        question.options.map((option, index)=>{
           return(
-            <button className='quiz-question quiz-question-media   text-rose-300  text-2xl font-semibold '>{option}</button>
+            <button
+            key={index}
+            onClick={() => handleSelectedOption(option)}
+             className={`${
+              showAnswer && option === question.answer ? "quiz-correct-ans" : showAnswer && option === selectedOption ? "quiz-worng-ans" : ""
+             } quiz-question quiz-question-media   text-rose-300  text-2xl font-semibold  `}>{option}</button>
           )
         })
       }
