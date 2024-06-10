@@ -3,6 +3,7 @@ import HeroSection from './HeroSection'
 import About from './About'
 import Features from './Features'
 import Image from 'next/image'
+import SliderPages from './SliderPages'
 // import { FcGoogle } from "react-icons/fc";
 
 const MainPage = () => {
@@ -13,7 +14,7 @@ const MainPage = () => {
    <About />
    <Features/>
 
-   <div className="w-full h-auto mt-[10rem]  gradient">
+   <div className="w-full h-auto mt-[10rem]  gradient ">
     <div className="flex justify-center m-1 flex-col ">
         <div className="h-[40rem] w-full bg-primary rounded-bl-full rounded-br-full rounded-bt-full">
             <div className="flex justify-center text-center m-[15rem]">
@@ -48,9 +49,11 @@ const MainPage = () => {
               </div>
             </div>
         </div>
-
-
     </div>
+   </div>
+
+   <div className="mt-12 mb-12">
+    <SliderPages/>
    </div>
     </div>
   )
