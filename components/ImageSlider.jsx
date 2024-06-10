@@ -91,7 +91,7 @@ const ImageSlider = ({slides}) => {
         <div 
         style={leftArrowStyles} 
         onClick={goToPrevious}
-        > <ArrowLeft/> </div>
+        > <ArrowLeft fontSize={60}/> </div>
         <div 
         style={rightArrowStyles}
         onClick={goToNext}
