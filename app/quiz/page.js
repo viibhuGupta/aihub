@@ -15,6 +15,15 @@ const page = () => {
     setShowAnswer(true)
   }
 
+  function handleNext() {
+   setCurrentQuestions((prevQn) => {
+    return (prevQn + 1) % questions.length 
+   })
+   setShowAnswer(false) // if we do not we 
+
+  }
+  
+
   
 
   return (
@@ -46,7 +55,7 @@ const page = () => {
 
       <section className='question  flex justify-start items-start flex-col gap-8 mb-12 mt-7  '>
         <div className='w-full bg-gray-500 p-[1px]'></div>
-        <h1 className='text-white font-bold text-3xl '> {question.id}. {question.question}</h1>
+        <h1 className='text-white font-bold text-3xl '> {question.id} . {question.question}</h1>
        
        
       {
@@ -56,7 +65,10 @@ const page = () => {
             key={index}
             onClick={() => handleSelectedOption(option)}
              className={`${
-              showAnswer && option === question.answer ? "quiz-correct-ans" : showAnswer && option === selectedOption ? "quiz-worng-ans" : ""
+              showAnswer && option === question.answer ?
+              "quiz-correct-ans" :
+              showAnswer && option === selectedOption ?
+              "quiz-worng-ans" : ""
              } quiz-question quiz-question-media   text-rose-300  text-2xl font-semibold  `}>{option}</button>
           )
         })
@@ -66,14 +78,16 @@ const page = () => {
 
       <footer className='quiz-footer '>
         <div className='flex gap-2  quiz-text'>
-          <h4 className=''>1 of 5</h4>
-          <h3 >Questions</h3>
+          <h4 className=''>{currentQuestions + 1 } Out Of {questions.length}</h4>
+         
         </div>
 
-        <button className='button-outline quiz-text'>Next Que</button>
+        <button 
+        onClick={handleNext}
+        className='button-outline quiz-text'>Next Que</button>
 
       </footer>
-        
+
       </main>
       
 
