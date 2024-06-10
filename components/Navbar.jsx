@@ -13,9 +13,10 @@ const navData =[
     path : "/pricing"
   },
   {
-    name : "Image Slider",
-    path : "/imageSlider"
+    name : "Quiz",
+    path : "/quiz"
   },
+ 
  
 ]
 
@@ -34,7 +35,7 @@ const Navbar = () => {
     
 
          
-            <ul className=' sm:flex  lg:flex lg:gap-5 md:flex md:gap-3'>
+            <ul className=' sm:flex text-xl font-semibold  lg:flex lg:gap-5 md:flex md:gap-3'>
 
               {
                 navData.map((items,index) => {                  
