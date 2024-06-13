@@ -16,6 +16,10 @@ const navData =[
     name : "Quiz",
     path : "/quiz"
   },
+  {
+    name : "storeHub",
+    path : "/storehub"
+  },
  
  
 ]
