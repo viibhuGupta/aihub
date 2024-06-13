@@ -16,9 +16,7 @@ const page = () => {
 
   const question = questions[currentQuestions]
 
-  console.log(selectedOption)
-  console.log(score)
-
+ 
   function handleSelectedOption  (option){
     setSelectedOption(option);
     setShowAnswer(true);
@@ -62,9 +60,7 @@ const page = () => {
     setCurrentQuestions(0);
   }
   
-  
 
-  
 
   return (
    <>
@@ -85,9 +81,9 @@ const page = () => {
        <div className=' flex lg:gap-4 lg:mt-[6rem] md:mt-[6rem]  md:gap-4  '> 
        <h1 className=' text-5xl font-extrabold  text-white capitalize'>Welcome To Quiz App! 
        </h1> 
-        <div className=' '>
+        <div className=''>
           <Image 
-          src="/assets/icons/quiz.svg"
+          src="http://localhost:3000/assets/icons/quiz.svg"
           width={60}
           height={10}
           alt='quiz'
