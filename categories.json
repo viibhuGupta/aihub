@@ -4,29 +4,30 @@
       "id": 1,
       "title": "Television",
       "description": "A wide range of high-quality televisions.",
-      "image": "/public/json/categories/television.jpg",
+      "image": "/json/categories/television.jpg",
       "key": "CATEGORY_TELEVISION"
     },
     {
       "id": 2,
       "title": "Mobile",
       "description": "Latest smartphones and accessories.",
-      "image": "/public/json/categories/mobiles.jpg",
+      "image": "/json/categories/mobiles.jpg",
       "key": "CATEGORY_MOBILE"
     },
     {
       "id": 3,
       "title": "Clothes",
       "description": "Fashionable clothing for men, women, and children.",
-      "image": "/public/json/categories/clothes.jpg",
+      "image": "/json/categories/clothes.jpg",
       "key": "CATEGORY_CLOTHES"
     },
     {
       "id": 4,
       "title": "Furniture",
       "description": "Comfortable and stylish furniture for your home.",
-      "image": "/public/json/categories/furniture.jpg",
+      "image": "/json/categories/furniture.jpg",
       "key": "CATEGORY_FURNITURE"
     }
   ]
 }
+
