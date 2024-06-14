@@ -17,10 +17,6 @@ const navData =[
     path : "/pricing"
   },
   {
-    name : "storeHub",
-    path : "/storehub"
-  },
-  {
     name : "Store",
     path : "/store"
   },
