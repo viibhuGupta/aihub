@@ -4,7 +4,7 @@ import PricingCard from '@/components/PricingCard'
 import {  monthlyPackageData ,yearlyPackageData } from '@/Data'
 import { useState } from "react"
 
-const page = () => {
+const Page = () => {
 const [pricing , setPricing ] = useState("monthly");
 const [pricingData , setPricingData] = useState(monthlyPackageData)
 
@@ -69,4 +69,4 @@ const [pricingData , setPricingData] = useState(monthlyPackageData)
   )
 }
 
-export default page
+export default Page

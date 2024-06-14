@@ -5,7 +5,7 @@ import "@/sass/_quizPage.scss"
 import { questions } from '@/Data';
 import Link from 'next/link';
 
-const page = () => {
+const Page = () => {
 
   const [currentQuestions , setCurrentQuestions] = useState(0);
   const [selectedOption , setSelectedOption] = useState("");
@@ -153,4 +153,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

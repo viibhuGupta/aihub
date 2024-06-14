@@ -4,7 +4,7 @@ import { getProduct } from '../api/products/route';
 import CategoryListing from '@/components/CategoryListing';
 import ProductListing from '@/components/ProductListing';
 
-const  page = async () => {
+const  Page = async () => {
     const categories = await getCategories();
     // console.log(categories)
 
@@ -19,4 +19,4 @@ const  page = async () => {
   )
 }
 
-export default page
+export default Page
