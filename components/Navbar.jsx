@@ -5,23 +5,26 @@ import { AlignRight } from 'lucide-react';
 
 const navData =[
   {
-    name : "Store",
-    path : "/store"
-  },
-  {
-    name : "Pricing",
-    path : "/pricing"
+    name : "Home",
+    path : "/"
   },
   {
     name : "Quiz",
     path : "/quiz"
   },
   {
+    name : "Pricing",
+    path : "/pricing"
+  },
+  {
     name : "storeHub",
     path : "/storehub"
   },
- 
- 
+  {
+    name : "Store",
+    path : "/store"
+  },
+  
 ]
 
 const Navbar = () => {
