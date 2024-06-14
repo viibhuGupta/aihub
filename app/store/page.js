@@ -1,52 +1,53 @@
-"use client"
+import React from "react";
+import { getCategories } from "../api/categories/route";
+import { getProduct } from "../api/products/route";
+import CategoryListing from "@/components/CategoryListing";
+import ProductListing from "@/components/ProductListing";
 
-import Image from 'next/image';
-import{ React , useState , useEffect} from 'react'
+const Page = async () => {
+  const categories = await getCategories();
+  // console.log(categories)
 
-export default  function Page  ()  {
+  const products = await getProduct();
+  // console.log(products)
 
+  const allTelevision = products.filter((product) => {
+    return product.category_id == 1;
+  });
 
-const [categories, setCategories] = useState([]);
+  const allMobiles = products.filter((product) => {
+    return product.category_id == 2;
+  });
 
-useEffect(() => {
-  async function fetchCategories() {
-    try {
-      const response = await fetch('https://api.escuelajs.co/api/v1/categories');
-      const data = await response.json();
-      setCategories(data.slice(0, 5)); // Get only the first five categories
-      console.log('Categories data:', data); 
-    } catch (error) {
-      console.error('Error fetching categories:', error);
-    }
-  }
+  const allClothes = products.filter((product) => {
+    return product.category_id == 3;
+  });
 
-  fetchCategories();
-}, []);
-  
+  const allFurniture = products.filter((product) => {
+    return product.category_id == 4;
+  });
   return (
-    <>
+    <div className="flex flex-col gap-[1rem]">
+      <CategoryListing data={categories} title="Category of Products " />
 
-<div>
-      <h1>Categories</h1>
-      <ul>
-        {categories.map(category => (
-          <li key={category.id}>
-            {category.name}
+      <ProductListing data={allTelevision} title="Televisions" />
 
-            <Image
-            src={category.image}
-            height={200}
-            width={150}
-            alt='categirt'
-            />
-          </li>
-        ))}
-      </ul>
+      <ProductListing data={allMobiles} title="Mobiles" />
+
+      <ProductListing data={allClothes} title="Clothes" />
+
+      <ProductListing data={allFurniture} title="Furniture" />
+      <ProductListing data={products} title="All Products" />
     </div>
-    
-    </>
+  );
+};
 
-   
-  )
-}
+export default Page;
+
+
+
+
+
+
+
 

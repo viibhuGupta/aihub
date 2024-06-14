@@ -1,218 +1,262 @@
 [
-      {
-        "id": 101,
-        "category_id": 1,
-        "title": "Samsung 55 QLED",
-        "slug": "samsung-55-qled",
-        "short_description": "Experience the vibrant colors and stunning clarity with Samsung's 55-inch QLED TV.",
-        "detail_description": "Samsung's 55-inch QLED TV offers an immersive viewing experience with Quantum Dot technology that delivers over a billion shades of color. The Ultra HD resolution ensures crystal-clear images, while the smart features provide easy access to your favorite streaming services.",
-        "images": [
-          "/public/json/product/samsungOled-1.jpg",
-          "/public/json/product/samsungOled-2.jpg"
-        ],
-        "isFeatured": true,
-        "isTrending": true,
-        "brand": "Samsung",
-        "keywords": ["Samsung", "QLED", "55-inch", "Smart TV", "4K"],
-        "initialPrice": 1200.00,
-        "currentPrice": 999.99,
-        "ratings": 4.8
-      },
-      {
-        "id": 102,
-        "category_id": 1,
-        "title": "LG 65 OLED",
-        "slug": "lg-65-oled",
-        "short_description": "Dive into the depth of black and vibrant colors with LG's 65-inch OLED TV.",
-        "detail_description": "LG's 65-inch OLED TV features self-lighting pixels that can turn on and off individually to deliver perfect black, over a billion rich colors, and infinite contrast. With AI ThinQ, your TV becomes a central hub of the smart home, and the webOS platform makes streaming content easier than ever.",
-        "images": [
-          "/public/json/product/Lg-1.jpg",
-          "/public/json/product/Lg-2.jpg"
-        ],
-        "isFeatured": true,
-        "isTrending": false,
-        "brand": "LG",
-        "keywords": ["LG", "OLED", "65-inch", "Smart TV", "4K"],
-        "initialPrice": 2500.00,
-        "currentPrice": 2199.99,
-        "ratings": 4.9
-      },
-      {
-        "id": 103,
-        "category_id": 1,
-        "title": "Sony 75 LED",
-        "slug": "sony-75-led",
-        "short_description": "Enjoy stunning clarity and vibrant colors with Sony's 75-inch LED TV.",
-        "detail_description": "Sony's 75-inch LED TV provides a dynamic and realistic picture with its 4K HDR Processor X1. Triluminos Display maps colors from a wider palette to faithfully reproduce every shade and hue. With Google Assistant built-in, this TV becomes the hub for your smart home devices.",
-        "images": [
-          "/public/json/product/Sony-1.jpg",
-          "/public/json/product/Sony-2.jpg"
-        ],
-        "isFeatured": false,
-        "isTrending": true,
-        "brand": "Sony",
-        "keywords": ["Sony", "LED", "75-inch", "Smart TV", "4K"],
-        "initialPrice": 3000.00,
-        "currentPrice": 2799.99,
-        "ratings": 4.7
-      },
+  {
+    "id": 1,
+    "category_id": 1,
+    "title": "Samsung 55 QLED",
+    "slug": "samsung-55-qled",
+    "short_description": "Experience the vibrant colors and stunning clarity with Samsung's 55-inch QLED TV.",
+    "detail_description": [
+      "Samsung's 55-inch QLED TV offers an immersive viewing experience with Quantum Dot technology that delivers over a billion shades of color. ",
+      "The Ultra HD resolution ensures crystal-clear images, while the smart features provide easy access to your favorite streaming services.",
+      "Experience true-to-life colors and crisp details with HDR technology.",
+      "Enjoy smooth motion and reduced blur with Motion Rate 240.",
+      "Easily connect to other devices with Bluetooth and HDMI inputs."
+    ],
+    "images": [
+      "/json/product/samsungOled-1.jpg",
+      "/json/product/samsungOled-2.jpg"
+    ],
+    "isFeatured": true,
+    "isTrending": true,
+    "brand": "Samsung",
+    "keywords": ["Samsung", "QLED", "55-inch", "Smart TV", "4K"],
+    "initialPrice": 1200.0,
+    "currentPrice": 999.99,
+    "ratings": 4.8
+  },
+  {
+    "id": 2,
+    "category_id": 1,
+    "title": "LG 65 OLED",
+    "slug": "lg-65-oled",
+    "short_description": "Dive into the depth of black and vibrant colors with LG's 65-inch OLED TV.",
+    "detail_description": [
+      "LG's 65-inch OLED TV features self-lighting pixels that can turn on and off individually to deliver perfect black, over a billion rich colors, and infinite contrast. With AI ThinQ, your TV becomes a central hub of the smart home, and the webOS platform makes streaming content easier than ever.",
+      "Experience stunning sound quality with Dolby Atmos and OLED Surround.",
+      "Stream your favorite content with built-in apps like Netflix, Disney+, and more.",
+      "Control your TV and smart home devices with LG's Magic Remote."
+    ],
+    "images": ["/json/product/Lg-1.jpg", "/json/product/Lg-2.jpg"],
+    "isFeatured": true,
+    "isTrending": false,
+    "brand": "LG",
+    "keywords": ["LG", "OLED", "65-inch", "Smart TV", "4K"],
+    "initialPrice": 2500.0,
+    "currentPrice": 2199.99,
+    "ratings": 4.9
+  },
+  {
+    "id": 3,
+    "category_id": 1,
+    "title": "Sony 75 LED",
+    "slug": "sony-75-led",
+    "short_description": "Enjoy stunning clarity and vibrant colors with Sony's 75-inch LED TV.",
+    "detail_description": [
+      "Sony's 75-inch LED TV provides a dynamic and realistic picture with its 4K HDR Processor X1. Triluminos Display maps colors from a wider palette to faithfully reproduce every shade and hue. With Google Assistant built-in, this TV becomes the hub for your smart home devices.",
+      "Enhance your viewing experience with Motionflow XR technology for smooth action scenes.",
+      "Connect effortlessly with Google Cast and built-in Wi-Fi.",
+      "Enjoy a slim and stylish design that complements any living space."
+    ],
+    "images": ["/json/product/Sony-1.jpg", "/json/product/Sony-2.jpg"],
+    "isFeatured": false,
+    "isTrending": true,
+    "brand": "Sony",
+    "keywords": ["Sony", "LED", "75-inch", "Smart TV", "4K"],
+    "initialPrice": 3000.0,
+    "currentPrice": 2799.99,
+    "ratings": 4.7
+  },
+  {
+    "id": 4,
+    "category_id": 2,
+    "title": "Samsung Galaxy S21",
+    "slug": "samsung-galaxy-s21",
+    "short_description": "A high-end smartphone with powerful performance and sleek design.",
+    "detail_description": [
+      "The Samsung Galaxy S21 features a 6.2-inch Dynamic AMOLED display, Exynos 2100 processor, and a triple camera setup for capturing high-quality photos and videos. It supports 5G connectivity, ensuring super-fast internet speeds, and comes with a long-lasting battery to keep you connected all day.",
+      "Capture every detail with 8K video recording and Space Zoom up to 30x.",
+      "Experience smooth gaming and multitasking with a high-performance chipset.",
+      "Stay organized with Samsung Notes and seamless integration with other Galaxy devices."
+    ],
+    "images": ["/json/product/Samsung-1.jpg", "/json/product/Samsung-2.jpg"],
+    "isFeatured": false,
+    "isTrending": true,
+    "brand": "Samsung",
+    "keywords": ["Samsung", "Galaxy", "S21", "Smartphone"],
+    "initialPrice": 799.0,
+    "currentPrice": 749.99,
+    "ratings": 4.8
+  },
+  {
+    "id": 6,
+    "category_id": 2,
+    "title": "Google Pixel 6",
+    "slug": "google-pixel-6",
+    "short_description": "Google's latest smartphone with innovative AI features.",
+    "detail_description": [
+      "The Google Pixel 6 comes with a 6.4-inch AMOLED display, Google Tensor processor, and a dual camera system. It runs on Android 12, providing a clean and efficient user experience. The Pixel 6 leverages Google's AI for advanced photography features and real-time translation capabilities.",
+      "Enjoy fast performance and enhanced security with Titan M2 chip.",
+      "Stay connected with 5G capabilities and long-lasting Adaptive Battery.",
+      "Access Google Assistant for hands-free tasks and smart home control."
+    ],
+    "images": [
+      "/json/product/googlePixel-1.jpg",
+      "/json/product/googlePixel-2.jpg"
+    ],
+    "isFeatured": true,
+    "isTrending": false,
+    "brand": "Google",
+    "keywords": ["Google", "Pixel", "6", "Smartphone"],
+    "initialPrice": 699.0,
+    "currentPrice": 649.99,
+    "ratings": 4.7
+  },
+  {
+    "id": 7,
+    "category_id": 3,
+    "title": "Men's Leather Jacket",
+    "slug": "mens-leather-jacket",
+    "short_description": "Stylish and comfortable leather jacket for men.",
+    "detail_description": [
+      "This men's leather jacket is crafted from premium leather, offering both style and durability. It features a modern fit, multiple pockets, and a sleek design that is perfect for casual or semi-formal occasions.",
+      "Stay warm with quilted lining and adjustable cuffs.",
+      "Complete your look with a classic collar and zippered closure.",
+      "Available in multiple colors to suit your personal style."
+    ],
+    "images": [
+      "/json/product/mensLether-1.jpg",
+      "/json/product/mensLether-2.jpg"
+    ],
+    "isFeatured": true,
+    "isTrending": true,
+    "brand": "Fashion Co.",
+    "keywords": ["Leather Jacket", "Men", "Fashion", "Outerwear"],
+    "initialPrice": 250.0,
+    "currentPrice": 199.99,
+    "ratings": 4.5
+  },
+  {
+    "id": 8,
+    "category_id": 3,
+    "title": "Women's Summer Dress",
+    "slug": "womens-summer-dress",
+    "short_description": "Light and breezy summer dress perfect for any occasion.",
+    "detail_description": [
+      "This women's summer dress is designed with comfort and style in mind. Made from breathable fabric, it features a flattering A-line silhouette, vibrant patterns, and adjustable straps, making it a great choice for hot summer days.",
+      "Layer with a denim jacket and sandals for a casual look, or pair with heels for a more formal event.",
+      "Machine washable for easy care and maintenance.",
+      "Available in sizes XS to XL to accommodate different body types."
+    ],
+    "images": [
+      "/json/product/womenSummer-1.jpg",
+      "/json/product/womenSummer-2.jpg"
+    ],
+    "isFeatured": false,
+    "isTrending": true,
+    "brand": "Sunny Days",
+    "keywords": ["Summer Dress", "Women", "Fashion", "Casual"],
+    "initialPrice": 80.0,
+    "currentPrice": 59.99,
+    "ratings": 4.7
+  },
+  {
+    "id": 9,
+    "category_id": 3,
+    "title": "Kid's Hoodie",
+    "slug": "kids-hoodie",
+    "short_description": "Comfortable and trendy hoodie for kids.",
+    "detail_description": [
+      "This kid's hoodie is made from soft, durable fabric that keeps children warm and comfortable. It features a fun design, kangaroo pockets, and a hood with drawstrings, making it a perfect choice for everyday wear.",
+      "Ideal for outdoor play and school activities.",
+      "Machine washable for easy cleaning.",
+      "Available in multiple colors and sizes for boys and girls."
+    ],
+    "images": [
+      "/json/product/kidsHoodies-1.jpg",
+      "/json/product/kidsHoodies-2.jpg"
+    ],
+    "isFeatured": true,
+    "isTrending": false,
+    "brand": "KidsStyle",
+    "keywords": ["Hoodie", "Kids", "Fashion", "Casual"],
+    "initialPrice": 40.0,
+    "currentPrice": 29.99,
+    "ratings": 4.6
+  },
+  {
+    "id": 10,
+    "category_id": 4,
+    "title": "Modern Leather Sofa",
+    "slug": "modern-leather-sofa",
+    "short_description": "Luxurious and comfortable modern leather sofa.",
+    "detail_description": [
+      "This modern leather sofa combines style and comfort with its high-quality leather upholstery and sturdy frame. The sofa features a sleek design with plush cushions, providing the perfect spot for relaxation in any living room.",
+      "Constructed with durable materials for long-lasting use.",
+      "Easy to clean and maintain with regular leather care products.",
+      "Available in different configurations to suit various living spaces."
+    ],
+    "images": [
+      "/json/product/letherSofa-1.jpg",
+      "/json/product/letherSofa-2.jpg"
+    ],
+    "isFeatured": true,
+    "isTrending": true,
+    "brand": "Furniture Co.",
+    "keywords": ["sofa", "leather", "modern", "furniture", "living room"],
+    "initialPrice": 1500.0,
+    "currentPrice": 1299.99,
+    "ratings": 4.5
+  },
+  {
+    "id": 11,
+    "category_id": 4,
+    "title": "Wooden Dining Table Set",
+    "slug": "wooden-dining-table-set",
+    "short_description": "Elegant wooden dining table set with six chairs.",
+    "detail_description": [
+      "This wooden dining table set includes a beautifully crafted table and six matching chairs. The set is made from high-quality wood with a rich finish, making it a durable and stylish addition to any dining room. The chairs feature comfortable cushions for long-lasting comfort.",
+      "Perfect for family gatherings and dinner parties.",
+      "Easy to assemble with included instructions and tools.",
+      "Versatile design that complements both traditional and modern decor."
+    ],
+    "images": [
+      "/json/product/diningTable-1.jpg",
+      "/json/product/diningTable-2.jpg"
+    ],
+    "isFeatured": false,
+    "isTrending": true,
+    "brand": "Home Essentials",
+    "keywords": ["dining table", "wooden", "furniture", "dining room", "set"],
+    "initialPrice": 2000.0,
+    "currentPrice": 1799.99,
+    "ratings": 4.7
+  },
+  {
+    "id": 12,
+    "category_id": 4,
+    "title": "Queen Size Bed Frame",
+    "slug": "queen-size-bed-frame",
+    "short_description": "Stylish and sturdy queen size bed frame.",
+    "detail_description": [
+      "This queen size bed frame features a modern design with a sturdy construction. Made from high-quality materials, it offers excellent support and durability. The bed frame is easy to assemble and complements any bedroom decor.",
+      "Designed for a comfortable sleeping experience with ample space.",
+      "Enhance your bedroom's aesthetic with a sleek and minimalist frame.",
+      "Available in different finishes to match your personal style."
+    ],
+    "images": [
+      "/json/product/bed-1.jpg",
+      "/json/product/bed-2.jpg"
+    ],
+    "isFeatured": true,
+    "isTrending": false,
+    "brand": "Sleep Well",
+    "keywords": ["bed frame", "queen size", "furniture", "bedroom", "modern"],
+    "initialPrice": 800.0,
+    "currentPrice": 699.99,
+    "ratings": 4.6
+  }
+]
 
-      {
-        "id": 202,
-        "category_id": 2,
-        "title": "Samsung Galaxy S21",
-        "slug": "samsung-galaxy-s21",
-        "short_description": "A high-end smartphone with powerful performance and sleek design.",
-        "detail_description": "The Samsung Galaxy S21 features a 6.2-inch Dynamic AMOLED display, Exynos 2100 processor, and a triple camera setup for capturing high-quality photos and videos. It supports 5G connectivity, ensuring super-fast internet speeds, and comes with a long-lasting battery to keep you connected all day.",
-        "images": [
-          "/public/json/product/Samsung-1.jpg",
-          "/public/json/product/Samsung-2.jpg"
-        ],
-        "isFeatured": false,
-        "isTrending": true,
-        "brand": "Samsung",
-        "keywords": ["Samsung", "Galaxy", "S21", "Smartphone"],
-        "initialPrice": 799.00,
-        "currentPrice": 749.99,
-        "ratings": 4.8
-      },
-      {
-        "id": 203,
-        "category_id": 2,
-        "title": "Google Pixel 6",
-        "slug": "google-pixel-6",
-        "short_description": "Google's latest smartphone with innovative AI features.",
-        "detail_description": "The Google Pixel 6 comes with a 6.4-inch AMOLED display, Google Tensor processor, and a dual camera system. It runs on Android 12, providing a clean and efficient user experience. The Pixel 6 leverages Google's AI for advanced photography features and real-time translation capabilities.",
-        "images": [
-          "/public/json/product/googlePixel-1.jpg",
-          "/public/json/product/googlePixel-2.jpg"
-        ],
-        "isFeatured": true,
-        "isTrending": false,
-        "brand": "Google",
-        "keywords": ["Google", "Pixel", "6", "Smartphone"],
-        "initialPrice": 699.00,
-        "currentPrice": 649.99,
-        "ratings": 4.7
-      },
 
-          {
-            "id": 301,
-            "category_id": 3,
-            "title": "Men's Leather Jacket",
-            "slug": "mens-leather-jacket",
-            "short_description": "Stylish and comfortable leather jacket for men.",
-            "detail_description": "This men's leather jacket is crafted from premium leather, offering both style and durability. It features a modern fit, multiple pockets, and a sleek design that is perfect for casual or semi-formal occasions.",
-            "images": [
-              "/public/json/product/mensLether-1.jpg",
-              "/public/json/product/mensLether-2.jpg"
-            ],
-            "isFeatured": true,
-            "isTrending": true,
-            "brand": "Fashion Co.",
-            "keywords": ["Leather Jacket", "Men", "Fashion", "Outerwear"],
-            "initialPrice": 250.00,
-            "currentPrice": 199.99,
-            "ratings": 4.5
-          },
-          {
-            "id": 302,
-            "category_id": 3,
-            "title": "Women's Summer Dress",
-            "slug": "womens-summer-dress",
-            "short_description": "Light and breezy summer dress perfect for any occasion.",
-            "detail_description": "This women's summer dress is designed with comfort and style in mind. Made from breathable fabric, it features a flattering A-line silhouette, vibrant patterns, and adjustable straps, making it a great choice for hot summer days.",
-            "images": [
-              "/public/json/product/womenSummer-1.jpg",
-              "/public/json/product/womenSummer-2.jpg"
-            ],
-            "isFeatured": false,
-            "isTrending": true,
-            "brand": "Sunny Days",
-            "keywords": ["Summer Dress", "Women", "Fashion", "Casual"],
-            "initialPrice": 80.00,
-            "currentPrice": 59.99,
-            "ratings": 4.7
-          },
-          {
-            "id": 303,
-            "category_id": 3,
-            "title": "Kid's Hoodie",
-            "slug": "kids-hoodie",
-            "short_description": "Comfortable and trendy hoodie for kids.",
-            "detail_description": "This kid's hoodie is made from soft, durable fabric that keeps children warm and comfortable. It features a fun design, kangaroo pockets, and a hood with drawstrings, making it a perfect choice for everyday wear.",
-            "images": [
-              "/public/json/product/kidsHoodies-1.jpg",
-              "/public/json/product/kidsHoodies-2.jpg"
-            ],
-            "isFeatured": true,
-            "isTrending": false,
-            "brand": "KidsStyle",
-            "keywords": ["Hoodie", "Kids", "Fashion", "Casual"],
-            "initialPrice": 40.00,
-            "currentPrice": 29.99,
-            "ratings": 4.6
-          },
-     
-          {
-            "id": 401,
-            "category_id": 4,
-            "title": "Modern Leather Sofa",
-            "slug": "modern-leather-sofa",
-            "short_description": "Luxurious and comfortable modern leather sofa.",
-            "detail_description": "This modern leather sofa combines style and comfort with its high-quality leather upholstery and sturdy frame. The sofa features a sleek design with plush cushions, providing the perfect spot for relaxation in any living room.",
-            "images": [
-              "/public/json/product/letherSofa-1.jpg",
-              "/public/json/product/letherSofa-2.jpg"
-            ],
-            "isFeatured": true,
-            "isTrending": true,
-            "brand": "Furniture Co.",
-            "keywords": ["sofa", "leather", "modern", "furniture", "living room"],
-            "initialPrice": 1500.00,
-            "currentPrice": 1299.99,
-            "ratings": 4.5
-          },
-          {
-            "id": 402,
-            "category_id": 4,
-            "title": "Wooden Dining Table Set",
-            "slug": "wooden-dining-table-set",
-            "short_description": "Elegant wooden dining table set with six chairs.",
-            "detail_description": "This wooden dining table set includes a beautifully crafted table and six matching chairs. The set is made from high-quality wood with a rich finish, making it a durable and stylish addition to any dining room. The chairs feature comfortable cushions for long-lasting comfort.",
-            "images": [
-              "/public/json/product/diningTable-1.jpg",
-              "/public/json/product/diningTable-2.jpg"
-            ],
-            "isFeatured": false,
-            "isTrending": true,
-            "brand": "Home Essentials",
-            "keywords": ["dining table", "wooden", "furniture", "dining room", "set"],
-            "initialPrice": 2000.00,
-            "currentPrice": 1799.99,
-            "ratings": 4.7
-          },
-          {
-            "id": 403,
-            "category_id": 4,
-            "title": "Queen Size Bed Frame",
-            "slug": "queen-size-bed-frame",
-            "short_description": "Stylish and sturdy queen size bed frame.",
-            "detail_description": "This queen size bed frame features a modern design with a sturdy construction. Made from high-quality materials, it offers excellent support and durability. The bed frame is easy to assemble and complements any bedroom decor.",
-            "images": [
-              "/public/json/product/bed-1.jpg",
-              "/public/json/product/bed-2.jpg"
-            ],
-            "isFeatured": true,
-            "isTrending": false,
-            "brand": "Sleep Well",
-            "keywords": ["bed frame", "queen size", "furniture", "bedroom", "modern"],
-            "initialPrice": 800.00,
-            "currentPrice": 699.99,
-            "ratings": 4.6
-          }
 
-        ]
-     
-  
-  
+
