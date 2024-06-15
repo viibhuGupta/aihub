@@ -31,5 +31,15 @@
   @apply border border-[#22c55e] rounded-lg p-3 pl-6 pr-6  ;
 
 }
+.input-tag-container{
+  @apply flex flex-col   gap-3 m-4 ;
+
+}
+.input-tag{
+  @apply p-3 rounded-md bg-gray-100 border focus:border border-gray-500 focus:border-[#6239b0] focus:bg-gray-50 duration-300 outline-none;
+
+}
+
+
 
 }
