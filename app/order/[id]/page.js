@@ -1,5 +1,5 @@
 import { getProduct } from '@/app/api/products/route'
-import OrderForm from '@/components/OrderForm';
+import OrderPage from '@/components/OrderPage';
 import React from 'react'
 
 export async function generateStaticParams() {
@@ -10,7 +10,7 @@ const page = ({params }) => {
     const products = getProduct(params.id)
   return (
     <div> 
-        <OrderForm data={products}/>
+        <OrderPage data={products}/>
     </div>
   )
 }
