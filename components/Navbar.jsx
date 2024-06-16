@@ -1,7 +1,8 @@
 "use client"
 import Link from 'next/link'
-import React , {useState} from 'react'
+import React , {useEffect, useState} from 'react'
 import { AlignRight } from 'lucide-react';
+import { useCart } from './CardContext';
 
 const navData =[
   {
@@ -20,11 +21,32 @@ const navData =[
     name : "Store",
     path : "/store"
   },
+  {
+    name : "Store Hub",
+    path : "/storehub"
+  },
+
   
 ]
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
+  const {cart} = useCart();
+  const [   navCart , setNavCart] = useState(navData);
+
+  useEffect(()=> {
+    setNavCart([
+      ...navData,
+      {
+        name:`Cart ${cart.length}`,
+        path:"/cart"
+      }
+    ]
+      
+    );
+
+  },[cart.length])
+
   return (
     <div className=" w-full flex justify-between items-center  bg-transparent p-4 pr-10 pl-10 ">
      
@@ -41,7 +63,7 @@ const Navbar = () => {
             <ul className=' sm:flex text-xl font-semibold  lg:flex lg:gap-5 md:flex md:gap-3'>
 
               {
-                navData.map((items,index) => {                  
+                navCart.map((items,index) => {                  
                     return(
                       <li 
                       className='' 
