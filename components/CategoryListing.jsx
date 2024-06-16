@@ -44,16 +44,6 @@
 
   CategoryListing.displayName = "CategoryListing";
 
-  // CategoryListing.propTypes = {
-  //   data: PropTypes.shape({
-  //     categories: PropTypes.arrayOf(PropTypes.shape({
-  //       id: PropTypes.number.isRequired,
-  //       title: PropTypes.string.isRequired,
-  //       description: PropTypes.string.isRequired,
-  //       image: PropTypes.string.isRequired,
-  //       key: PropTypes.string.isRequired,
-  //     })).isRequired,
-  //   }).isRequired,
-  // };
+
 
   export default CategoryListing;
