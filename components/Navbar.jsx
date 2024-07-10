@@ -77,8 +77,8 @@ const Navbar = () => {
             </ul>
             {/* "md:flex lg:flex gap-5 hidden " */}
             <div className= {`md:flex lg:flex lg:gap-5 md:gap-3 hidden `}>
-              <button>Login</button>
-              <button className='btn bg-red-400 text-primary'>Get Started</button>
+              <Link href="/login">Login</Link>
+              <Link href="/signup" className='btn bg-red-400 text-primary'>Get Started</Link>
             </div>
 
             <button className='lg:hidden md:hidden  '>
