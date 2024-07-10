@@ -4,6 +4,7 @@ import CartProducts from "@/components/CartProducts";
 import React from "react";
 
 const page = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { cart } = useCart();
   console.log(cart);
 
