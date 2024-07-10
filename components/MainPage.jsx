@@ -8,7 +8,7 @@ import SliderPages from './SliderPages'
 
 const MainPage = () => {
   return (
-    <div>
+    <div className="mb-[10rem]">
 
    <HeroSection/>
    <About />

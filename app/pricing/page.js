@@ -49,7 +49,7 @@ const [pricingData , setPricingData] = useState(monthlyPackageData)
 
 
 
-      <div className='pricing-container'>
+      <div className='pricing-container '>
     {
       pricingData.map(( packageData , index)=> {
         return(

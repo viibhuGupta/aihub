@@ -12,8 +12,8 @@ const ProductsDataAPI = ({ data  }) => {
   
 
   return (
-    <div className="w-[30rem]  lg:md:w-full h-auto grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 mt-32 md:ml-[7rem] ">
-      <div className="w-[25rem] flex flex-col justify-center gap-10   h-auto p-[1rem]  rounded-md shadow-lg hover:shadow-2xl duration-300 ">
+    <div className="w-[30rem]  lg:md:w-full h-auto  mt-32 md:ml-[7rem] ">
+      <div className="w-[25rem] flex flex-col justify-center gap-10   h-auto p-[1rem]  rounded-md shadow-lg hover:shadow-xl duration-300 ">
         <div className="">
           <h1 className="font-semibold text-lg text-gray-600">{data.title}</h1>
         </div>

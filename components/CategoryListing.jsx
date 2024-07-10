@@ -20,7 +20,7 @@
               className=" w-auto p-3 rounded-md shadow-lg "
               key={category.id}
             >
-              <div className="w-[20rem] h-[20rem]  relative">
+              <div  className="w-[20rem] h-[20rem]  relative">
               <div className="absolute inset-0 overflow-hidden   ">
                 <Image
                   src={category.image}

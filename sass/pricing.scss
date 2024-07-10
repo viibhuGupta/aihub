@@ -1,68 +1,63 @@
-.price{
+.price {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid black;
+ 
+
+  .main-top {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60rem;
     justify-content: center;
-    border-top: 2px solid black;
-   
-    
-    .main-top{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 60rem;
-        justify-content: center;
-        align-items: center;
-        background:skyblue;
-        position: relative;
+    align-items: center;
+    background: skyblue;
+    position: relative;
 
-        .head-para{
-            width: 40rem;
-            height: 30rem;
-            display: flex;
-            text-align: center;
-            flex-direction: column;
-            gap: 0.4rem;
+    .head-para {
+      width: 40rem;
+      height: 30rem;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      gap: 0.4rem;
 
-            h1{
-                font-size: 3rem;
-                font-weight: bolder;
-            }
-        }
-
-        .package{
-            display: flex;
-            
-            button{
-               width: 10rem;
-               height: auto;
-               padding: 15px;
-               font-size:larger;
-               color: white;
-               text-transform: uppercase;
-               font-weight: bold;
-            
-            }
-            .montly-btn{
-                border-top-left-radius: 5px;
-                border-bottom-left-radius: 5px;
-                background: rebeccapurple;
-                
-
-            }
-            .yearly-btn{
-                border-top-right-radius: 5px;
-                border-bottom-right-radius: 5px;
-                background: rebeccapurple;
-                
-            }
-        }
-       
+      h1 {
+        font-size: 3rem;
+        font-weight: bolder;
+      }
     }
 
-    .pricing-container{
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        margin-top: 50rem;
-       gap: 1px;
+    .package {
+      display: flex;
+
+      button {
+        width: 10rem;
+        height: auto;
+        padding: 15px;
+        font-size: larger;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .montly-btn {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: rebeccapurple;
+      }
+      .yearly-btn {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background: rebeccapurple;
+      }
     }
+  }
+
+  .pricing-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 50rem;
+    gap: 1rem;
+  }
 }

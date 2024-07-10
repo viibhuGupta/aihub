@@ -11,9 +11,9 @@ function StoreHubPage() {
 
 
     return (
-        <section>
-            <h1 className='text-5xl font-bold flex justify-center'>Product Store Is Here</h1>
-            <div>
+        <section className="mb-20">
+            <h1 className='text-5xl font-bold flex justify-center mt-20'>Product Store Is Here</h1>
+            <div className="grid grid-row-1  md:grid-cols-3 sm:grid-cols-2 ">
                 {
                     products.map((product)=> {
                         return(

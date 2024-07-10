@@ -27,8 +27,11 @@ const ProductDetailsPage = ({ data }) => {
         
         <div className="absolute inset-0 overflow-hidden">
        
-        {
+
+       {/* For All images in array form */}
+        {/* {
           images.map((item,index)=> {
+           
             return(
               <Image
               key={index} 
@@ -40,6 +43,19 @@ const ProductDetailsPage = ({ data }) => {
             />
             )
           })
+        } */}
+
+        {
+          images.length > 0 && (
+            <Image
+           
+              src={images[0]}
+              alt={title}
+              layout="fill"
+              objectFit="contain"
+              className="p-6"
+            />
+          )
         }
          
         </div>
