@@ -30,7 +30,7 @@ const OrderForm = ({title,image,dec,price}) => {
       onSubmit={handleSubmit(handleDataSubmit)} 
       className=" p-[1rem] lg:flex lg:flex-col  w-full h-[100rem]   lg:w-[50rem] lg:h-auto  ">
 
-        <div className=" input-tag-container   lg:h-[10rem] flex justify-center  "> 
+        <div className=" input-tag-container flex justify-center  "> 
         {errors.FullName &&  <span className="text-rose-400 font-semibold duration-300">Full Name is Required </span>}
           <input
             className="input-tag "
@@ -43,7 +43,7 @@ const OrderForm = ({title,image,dec,price}) => {
        
         </div>
 
-        <div className=" flex lg:flex-row  flex-col    lg:h-[10rem] gap-4   ">
+        <div className=" flex lg:flex-row  flex-col sm:gap-4   ">
           
           <div className=" input-tag-container flex justify-center ">
           {errors.PhoneNumber &&  <span className="text-rose-400 font-semibold duration-300">Phone Number is Required </span>}
@@ -70,7 +70,7 @@ const OrderForm = ({title,image,dec,price}) => {
 
         </div>
 
-        <div className=" flex  lg:flex-row  flex-col  gap-4  lg:h-[10rem]">
+        <div className=" flex  lg:flex-row  flex-col  sm:gap-4 ">
 
           <div className=" input-tag-container flex justify-center lg:md:w-[70rem] w-full ">
           {errors.BillingAddress &&  <span className="text-rose-400 font-semibold duration-300">Billing Address is Required </span>}
